@@ -4,13 +4,14 @@
   background: url('../img/main_background.jpg') no-repeat 50% / cover;
   padding-top: 205px;
   &__title {
-		margin-top: 10px;
-	}
-	&__subtitle {
-		position: relative;
-		z-index: 1;
-		@include before_circle;
-	}
+    margin-top: 10px;
+  }
+  &__subtitle {
+    position: relative;
+    padding: 2px 0 0 4px;
+    z-index: 1;
+    @include before_circle;
+  }
   &__btns {
     margin-top: 25px;
     display: flex;
@@ -20,13 +21,17 @@
   &__link {
     color: #000000;
     font-weight: 700;
-    &:nth-child(2) {
-			margin-left: 15px;
-			padding: 12px 25px;
-    }
+    transition: all 0.5s;
     &:hover {
       color: #000000;
       text-decoration: none;
+      box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    }
+    &:nth-child(2) {
+      margin-left: 15px;
+      padding: 12px 25px;
+      transition: none;
+      box-shadow: none;
     }
   }
 }
