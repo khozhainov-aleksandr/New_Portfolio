@@ -161,8 +161,8 @@
 		<!-- SECTION: Education -->
 		<section class="education">
 			<div class="container">
-				<h2 class="title title_fz16 education__title">Education</h2>
-				<div class="title title_fz36 education__subtitle">My Education and Certificate</div>
+				<h2 class="title title_fz16 title__section-title">Education</h2>
+				<div class="title title_fz36 title__section-subtitle">My Education and Certificate</div>
 				<div class="divider"></div>
 
 				<div class="education__wrapper">
@@ -238,8 +238,8 @@
 		<!-- SECTION: Skills -->
 		<section class="skills">
 			<div class="container">
-				<h2 class="title title_fz16 skills__title">Skills</h2>
-				<div class="title title_fz36 skills__subtitle">My skills, which I use in my Projects</div>
+				<h2 class="title title_fz16 title__section-title">Skills</h2>
+				<div class="title title_fz36 title__section-subtitle">My skills, which I use in my Projects</div>
 				<div class="divider"></div>
 		
 				<div class="skills__items">
@@ -345,48 +345,128 @@
 				<div class="skills__ratings">
 					<div class="skills__ratings-item">
 						<div class="title title_fz14 skills__ratings-title">HTML 5</div>
-						<div class="skills__ratings-counter">100%</div>
+						<div class="skills__ratings-counter">87%</div>
 						<div class="skills__ratings-line">
 							<span style="width: 100%"></span>
 						</div>
 					</div>
 					<div class="skills__ratings-item">
 						<div class="title title_fz14 skills__ratings-title">CSS 3</div>
-						<div class="skills__ratings-counter">85%</div>
+						<div class="skills__ratings-counter">82%</div>
 						<div class="skills__ratings-line">
 							<span style="width: 85%"></span>
 						</div>
 					</div>
 					<div class="skills__ratings-item">
 						<div class="title title_fz14 skills__ratings-title">JavaScript</div>
-						<div class="skills__ratings-counter">90%</div>
+						<div class="skills__ratings-counter">52%</div>
 						<div class="skills__ratings-line">
 							<span style="width: 90%"></span>
 						</div>
 					</div>
 					<div class="skills__ratings-item">
 						<div class="title title_fz14 skills__ratings-title">Креативность</div>
-						<div class="skills__ratings-counter">75%</div>
+						<div class="skills__ratings-counter">10%</div>
 						<div class="skills__ratings-line">
 							<span style="width: 75%"></span>
 						</div>
 					</div>
 					<div class="skills__ratings-item">
 						<div class="title title_fz14 skills__ratings-title">Создание дизайна</div>
-						<div class="skills__ratings-counter">90%</div>
+						<div class="skills__ratings-counter">10%</div>
 						<div class="skills__ratings-line">
 							<span style="width: 90%"></span>
 						</div>
 					</div>
 					<div class="skills__ratings-item">
 						<div class="title title_fz14 skills__ratings-title">Soft skills</div>
-						<div class="skills__ratings-counter">95%</div>
+						<div class="skills__ratings-counter">90%</div>
 						<div class="skills__ratings-line">
 							<span style="width: 95%"></span>
 						</div>
 					</div>
 				</div>
 
+			</div>
+		</section>
+
+		<!-- SECTION: Portfolio -->
+		<section class="portfolio">
+			<div class="container">
+				<h2 class="title title_fz16 title__section-title">Портфолио</h2>
+				<div class="title title_fz36 title__section-subtitle">Мои работы</div>
+				<div class="divider"></div>
+
+				<div class="portfolio__wrapper">
+					<a href="#" class="portfolio__item">
+						<img src="img/works/uber.jpg" alt="uber" />
+					</a>
+					<a href="#" class="portfolio__item">
+						<img src="img/works/pulse.jpg" alt="pulse" />
+					</a>
+					<a href="#" class="portfolio__item">
+						<img src="img/works/bread.jpg" alt="test" />
+					</a>
+					<a href="#" class="portfolio__item vertical">
+						<img src="img/works/plans.jpg" alt="test" />
+					</a>
+					<a href="#" class="portfolio__item">
+						<img src="img/works/ipad.jpg" alt="test" />
+					</a>
+					<a href="#" class="portfolio__item horizonal">
+						<img src="img/works/mac.jpg" alt="test" />
+					</a>
+				</div>
+
+			</div>
+		</section>
+
+		<!-- SECTION: Contacts -->
+		<section class="contacts">
+			<div class="container">
+				<div class="contacts__wrapper">
+					<div class="contacts__photo">
+						<img src="img/main_photo.jpg" alt="photo" />
+					</div>
+					<div class="contacts__descr">
+						<h2 class="title title_fz16 contacts__title">Контакты</h2>
+						<div class="title title_fz36 contacts__subtitle">Свяжитесь со мной</div>
+						<div class="divider"></div>
+
+						<div class="title title_fz14 contacts__text">Любым удобным для вас способом:</div>
+						<div class="contacts__social">
+							<a href="#" class="contacts__link">
+								<img src="icons/social/facebook_straight.svg" alt="facebook" />
+							</a>
+							<a href="#" class="contacts__link">
+								<img src="icons/social/telegram.svg" alt="telegram" />
+							</a>
+							<a href="#" class="contacts__link">
+								<img src="icons/social/instagram_straight.svg" alt="instagram" />
+							</a>
+						</div>
+						<div class="title title_fz14 contacts__text">Или оставьте ваши данные и я сама вам напишу:</div>
+
+						<form action="#" class="contacts__form">
+							<div class="contacts__input">
+								<input name="name" id="name" type="text" />
+								<label for="name">Ваше имя</label>
+							</div>
+							<div class="contacts__input">
+								<input name="email" id="email" type="email" />
+								<label for="email">Ваша почта</label>
+							</div>
+
+							<div class="contacts__textarea">
+								<textarea name="text" id="text"></textarea>
+								<label for="text">Ваше сообщение</label>
+							</div>
+							<div>
+								<button class="contacts__btn btn">Отправить сообщение</button>
+							</div>
+						</form>
+					</div>
+				</div>
 			</div>
 		</section>
 
