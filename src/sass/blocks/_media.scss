@@ -113,6 +113,22 @@
     }
   }
 
+  .experience-timer {
+    &__timer {
+      .timer__block {
+        &:nth-child(4) {
+          display: none;
+        }
+        &:nth-child(5) {
+          display: none;
+        }
+        &:nth-child(6) {
+          display: none;
+        }
+      }
+    }
+  }
+
   .education {
     &__wrapper {
       column-gap: 60px;
@@ -171,7 +187,7 @@
 
   .promo {
     &__title {
-			line-height: 60px;
+      line-height: 60px;
       width: 300px;
     }
   }
@@ -248,7 +264,7 @@
 
   .title {
     &_fz48 {
-			font-size: 26px; 
+      font-size: 26px;
     }
     &_fz36 {
       font-size: 24px;
@@ -281,6 +297,20 @@
     }
     &__skills {
       grid-template-columns: 1fr;
+    }
+  }
+
+  .experience-timer {
+    &__timer {
+      width: 80%;
+      .timer__block {
+        width: 90px;
+        height: 114px;
+
+        span {
+          font-size: 45px;
+        }
+      }
     }
   }
 
@@ -333,6 +363,11 @@
   .menu {
     &__block {
       left: 42%;
+    }
+  }
+  .experience-timer {
+    &__timer {
+      width: 95%;
     }
   }
 }
