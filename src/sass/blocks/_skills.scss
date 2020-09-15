@@ -17,10 +17,10 @@
     &-img {
       display: flex;
       align-items: center;
-			
-			& img {
-				max-height: 65px;
-			}
+
+      & img {
+        max-height: 65px;
+      }
     }
 
     h3 {
@@ -73,7 +73,7 @@
       span {
         display: block;
         height: 100%;
-        background-color: $main-color;
+        background-color: var(--main-color);
         border-radius: 4px;
       }
     }
