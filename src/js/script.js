@@ -88,6 +88,38 @@ function setClock(selector, beginningTime) {
 
 setClock('.timer', startTime);
 
+// SECTION: Certificates PopUp Button
+
+const modalTrigger = document.querySelector('[data-modal_certificate_open]');
+const modalClose = document.querySelector('[data-modal_certificate_close]');
+const modalWindow = document.querySelector('[data-modal_certificate]');
+const modalWrapper = document.querySelector('.modal__wrapper');
+
+modalTrigger.addEventListener('click', () => {
+	modalWindow.classList.add('modal_show');
+	modalWindow.classList.remove('modal_hide');
+	document.body.style.overflow = 'hidden';
+});
+
+modalClose.addEventListener('click', () => {
+	modalWindow.classList.remove('modal_show');
+	modalWindow.classList.add('modal_hide');
+	document.body.style.overflow = '';
+});
+
+modalWrapper.addEventListener('click', (event) => {
+	if (event.target === modalWrapper) {
+		modalWindow.classList.remove('modal_show');
+		modalWindow.classList.add('modal_hide');
+		document.body.style.overflow = '';
+	}
+});
+
+
+
+
+
+
 // SECTION: Skills Ratings.
 const counters = document.querySelectorAll('.skills__ratings-counter');
 const lines = document.querySelectorAll('.skills__ratings-line span');
