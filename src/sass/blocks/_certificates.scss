@@ -73,6 +73,11 @@
 
 				&_img {
 					width: 100%;
+
+					&:nth-child(1) {
+						position: relative;
+						top: 100px;
+					}
 				}
 			}
 		}

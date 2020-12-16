@@ -95,30 +95,51 @@ const modalClose = document.querySelector('[data-modal_certificate_close]');
 const modalWindow = document.querySelector('[data-modal_certificate]');
 const modalWrapper = document.querySelector('.modal__wrapper');
 
-modalTrigger.addEventListener('click', () => {
+function openModal() {
 	modalWindow.classList.add('modal_show');
 	modalWindow.classList.remove('modal_hide');
 	document.body.style.overflow = 'hidden';
-});
+	clearInterval(modalTimerId); // if the pop-up was open, do not open again
+}
 
-modalClose.addEventListener('click', () => {
+function closeModal() {
 	modalWindow.classList.remove('modal_show');
 	modalWindow.classList.add('modal_hide');
 	document.body.style.overflow = '';
-});
+}
 
+// Open Pop-Up
+modalTrigger.addEventListener('click', openModal);
+
+// Close Pop-Up for close icon
+modalClose.addEventListener('click', closeModal);
+
+// Close Pop-Up for touch out space
 modalWrapper.addEventListener('click', (event) => {
 	if (event.target === modalWrapper) {
-		modalWindow.classList.remove('modal_show');
-		modalWindow.classList.add('modal_hide');
-		document.body.style.overflow = '';
+		closeModal();
 	}
 });
 
+// Close Pop-Up for press Escape
+document.addEventListener('keydown', (event) => {
+	if (event.code === 'Escape' && modalWindow.classList.contains('modal_show')) {
+		closeModal();
+	}
+});
 
+// Open for timer
+const modalTimerId = setTimeout(openModal, 60000); // After 60 seconds
 
+// Open to scroll bottom
+window.addEventListener('scroll', showModalByScroll);
 
-
+function showModalByScroll() {
+	if (window.pageYOffset + document.documentElement.clientHeight >= document.documentElement.scrollHeight) {
+		openModal();
+		window.removeEventListener('scroll', showModalByScroll);
+	}
+}
 
 // SECTION: Skills Ratings.
 const counters = document.querySelectorAll('.skills__ratings-counter');
