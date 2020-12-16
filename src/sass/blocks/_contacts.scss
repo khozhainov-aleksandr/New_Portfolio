@@ -120,11 +120,6 @@
     font-weight: bold;
     font-size: 14px;
     line-height: 21px;
-    transition: all 0.5s;
-
-    &:hover {
-      text-decoration: none;
-      box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
-    }
+		@include hover_effect;
   }
 }

@@ -25,13 +25,7 @@
   &__link {
     color: #000000;
     font-weight: 700;
-    transition: all 0.5s;
-
-    &:hover {
-      color: #000000;
-      text-decoration: none;
-      box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
-    }
+    @include hover_effect;
 
     &:nth-child(2) {
       margin-left: 15px;
