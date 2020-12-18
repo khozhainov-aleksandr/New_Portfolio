@@ -44,14 +44,15 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- SECTION: CSS -->
-    <link rel="stylesheet" href="css/style.min.css"/>    
+    <link rel="stylesheet" href="./css/style.min.css"/>
     
-    <!-- SECTION: JavaScript -->
-    <script src="js/script.js" defer></script>
+		<!-- SECTION: JavaScript -->
+		<script async src="./js/lib/responsivelyLazy.min.js"></script>
+    <script defer src="./js/script.js" defer></script>
 
     <!-- Google Analytics -->
-    <script src="https://www.googletagmanager.com/gtag/js?id=UA-170129481-1" defer></script>
-    <script src="./js/analytics.js" defer></script>
+    <script defer src="https://www.googletagmanager.com/gtag/js?id=UA-170129481-1"></script>
+    <script defer src="./js/analytics.js"></script>
   </head>
 
   <body>
@@ -60,9 +61,15 @@
 
     <!-- SECTION: Side Panel - Social Networks -->
     <aside class="sidepanel">
-      <a href="https://www.linkedin.com/in/aleksandr-khozhainov-359172165" target="_blank" class="sidepanel__link"><img src="icons/social/linkedin.svg" alt="LinkedIn"></a>
-      <a href="https://www.instagram.com/alex_kh28/" target="_blank" class="sidepanel__link"><img src="icons/social/instagram.svg" alt="Instagram"></a>
-      <a href="https://github.com/khozhainov-aleksandr" target="_blank" class="sidepanel__link"><img src="icons/social/github.svg" alt="GitHub"></a>
+			<a href="https://www.linkedin.com/in/aleksandr-khozhainov-359172165" target="_blank" class="sidepanel__link">
+				<img src="./icons/social/linkedin.svg" alt="LinkedIn" class="responsively-lazy" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+			</a>
+			<a href="https://www.instagram.com/alex_kh28/" target="_blank" class="sidepanel__link">
+				<img src="./icons/social/instagram.svg" alt="Instagram" class="responsively-lazy" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+			</a>
+			<a href="https://github.com/khozhainov-aleksandr" target="_blank" class="sidepanel__link">
+				<img src="./icons/social/github.svg" alt="GitHub" class="responsively-lazy" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+			</a>
       <div class="sidepanel__divider"></div>
       <div class="sidepanel__text"><span>Social Networks</span></div>
     </aside>
@@ -88,9 +95,15 @@
         </nav>
 
         <div class="menu__social">
-          <a href="https://www.linkedin.com/in/aleksandr-khozhainov-359172165" target="_blank"><img src="icons/social/Linkedin.svg" alt="LinkedIn"></a>
-          <a href="https://www.instagram.com/alex_kh28/" target="_blank"><img src="icons/social/Instagram.svg" alt="Instagram"></a>
-          <a href="https://github.com/khozhainov-aleksandr" target="_blank"><img src="icons/social/Github.svg" alt="GitHub"></a>
+					<a href="https://www.linkedin.com/in/aleksandr-khozhainov-359172165" target="_blank">
+						<img src="./icons/social/Linkedin.svg" alt="LinkedIn" class="responsively-lazy" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+					</a>
+					<a href="https://www.instagram.com/alex_kh28/" target="_blank">
+						<img src="./icons/social/Instagram.svg" alt="Instagram" class="responsively-lazy" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+					</a>
+					<a href="https://github.com/khozhainov-aleksandr" target="_blank">
+						<img src="./icons/social/Github.svg" alt="GitHub" class="responsively-lazy" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
+					</a>
         </div>
       </div>
       <div class="menu__overlay"></div>
@@ -119,7 +132,7 @@
       <div class="container">
         <div class="about__wrapper">
           <div class="about__photo">
-            <img src="img/my_photo_header.jpg" alt="My Photo" />
+						<img src="./img/my_photo_header.jpg" alt="My Photo" class="responsively-lazy" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
           </div>
           <div class="about__descr">
             <h2 class="title title_fz16 about__title">About me</h2>
@@ -136,7 +149,7 @@
           <div class="about__skills">
             <div class="about__skills-item">
               <div class="about__skills-circle">
-                <img src="icons/about_me/location.svg" alt="My Location"/>
+								<img src="./icons/about_me/location.svg" alt="My Location" class="responsively-lazy" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
               </div>
               <div>
                 <div class="title title_fz14">Contacts and Location</div>
@@ -200,7 +213,7 @@
                 <div class="education__item">
                   <div class="education__item-head">
                     <div class="education__item-icon">
-                      <img src="icons/experience/university.svg" alt="university"/>
+											<img src="./icons/experience/university.svg" alt="University" class="responsively-lazy" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
                     </div>
                     <h4 class="title title_fz14">Hillel School</h4>
                     <div class="education__item-location">Front-End Basic | Odessa (2019)</div>
@@ -215,7 +228,7 @@
                 <div class="education__item">
                   <div class="education__item-head">
                     <div class="education__item-icon">
-                      <img src="icons/experience/courses.svg" alt="courses" />
+											<img src="./icons/experience/courses.svg" alt="Courses" class="responsively-lazy" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
                     </div>
                     <h4 class="title title_fz14">Udemy</h4>
                     <div class="education__item-location">Web Development (2019-2020)</div>
@@ -234,7 +247,7 @@
                 <div class="education__item">
                   <div class="education__item-head">
                     <div class="education__item-icon">
-                      <img src="icons/experience/anchor.svg" alt="Anchor" />
+											<img src="./icons/experience/anchor.svg" alt="Anchor" class="responsively-lazy" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
                     </div>
                     <h4 class="title title_fz14">Odessa National Maritime Academy</h4>
                     <div class="education__item-location">Navigator | Odessa (2011-2016)</div>
@@ -249,7 +262,7 @@
                 <div class="education__item">
                   <div class="education__item-head">
                     <div class="education__item-icon">
-                      <img src="./icons/experience/nutrition.svg" alt="nutrition" />
+											<img src="./icons/experience/nutrition.svg" alt="Nutrition" class="responsively-lazy" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
                     </div>
                     <h4 class="title title_fz14">ONA of Nutrition Technologies</h4>
                     <div class="education__item-location"> Restaurant business administrator | Odessa (2006-2010)</div>
@@ -264,8 +277,6 @@
         </div>
       </div>
     </section>
-
-		<!-- TODO: Сделать кнопку с Pop-up окном а внутри сертификаты. -->
 
     <!-- SECTION: Certificates -->
     <section id="anchor__certificates" class="certificates">
@@ -287,7 +298,7 @@
           <div class="skills__item">
             <!-- HTML5 -->
             <div class="skills__item-img">
-              <img src="icons/skills/html5.svg" alt="HTML5"/>
+							<img src="./icons/skills/html5.svg" alt="HTML5" class="responsively-lazy" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
             </div>
             <h3 class="title title_fz14">HTML5</h3>
             <p>Completed studies of HTML (HyperText Markup Language), learned how to do semantic page layout, HTML5 standard, apply Tags and Attributes on the site.</p>
@@ -295,7 +306,7 @@
           <!-- CSS3 -->
           <div class="skills__item">
             <div class="skills__item-img">
-              <img src="icons/skills/css3.svg" alt="CSS3"/>
+							<img src="./icons/skills/css3.svg" alt="CSS3" class="responsively-lazy" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
             </div>
             <h3 class="title title_fz14">CSS3</h3>
             <p>Completed studies of CSS (Cascading Style Sheets) Learned how to style elements on a web page using Tags, Selectors and Classes, work with Animations (@keyframes), work with pseudo-classes: before; : after; : nth-child (); and: hover effect.</p>
@@ -303,7 +314,7 @@
           <!-- Java Script -->
           <div class="skills__item">
             <div class="skills__item-img">
-              <img src="icons/skills/js.svg" alt="Java Script" />
+							<img src="./icons/skills/js.svg" alt="JavaScript" class="responsively-lazy" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
             </div>
             <h3 class="title title_fz14">Java Script</h3>
             <p>I am learning JavaScript programming language for writing logic on a website working with DOM.</p>
@@ -311,7 +322,7 @@
           <!-- GIT -->
           <div class="skills__item">
             <div class="skills__item-img">
-              <img src="icons/skills/git.svg" alt="GIT" />
+							<img src="./icons/skills/git.svg" alt="GIT" class="responsively-lazy" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
             </div>
             <h3 class="title title_fz14">GIT</h3>
             <p>Learned to work with a GIT system. Work with remote and local repositories, work with repository branches, do git commit, status, diff, log, reset, checkout, remote, push and pull, merge and rebase, branch and git cherry-pick.</p>
@@ -319,7 +330,7 @@
           <!-- SCSS / SASS -->
           <div class="skills__item">
             <div class="skills__item-img">
-              <img src="icons/skills/sass.svg" alt="SCSS/SASS" />
+							<img src="./icons/skills/sass.svg" alt="SCSS/SASS" class="responsively-lazy" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
             </div>
             <h3 class="title title_fz14">SCSS / SASS</h3>
             <p>I use SCSS and SASS preprocessor for convenient site styling, nesting of elements, variables and blocking for convenient site support.</p>
@@ -327,7 +338,7 @@
           <!-- Bootstrap -->
           <div class="skills__item">
             <div class="skills__item-img">
-              <img src="icons/skills/bootstrap.svg" alt="Bootstrap" />
+							<img src="./icons/skills/bootstrap.svg" alt="Bootstrap" class="responsively-lazy" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
             </div>
             <h3 class="title title_fz14">Bootstrap</h3>
             <p>I studied the framework Bootstrap, learned how to use the finished Bootstrap grid for faster adaptive layout on real projects.</p>
@@ -335,7 +346,7 @@
           <!-- jQuery -->
           <div class="skills__item">
             <div class="skills__item-img">
-              <img src="icons/skills/jquery.svg" alt="Jquery" />
+							<img src="./icons/skills/jquery.svg" alt="Jquery" class="responsively-lazy" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
             </div>
             <h3 class="title title_fz14">jQuery</h3>
             <p>I use the jQuery library in practice to connect plug-ins and configure them (pop-ups, sliders, animations, modal windows and Parallax effect)</p>
@@ -343,7 +354,7 @@
           <!-- Gulp -->
           <div class="skills__item">
             <div class="skills__item-img">
-              <img src="icons/skills/gulp.svg" alt="Gulp" />
+							<img src="./icons/skills/gulp.svg" alt="Gulp" class="responsively-lazy" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
             </div>
             <h3 class="title title_fz14">Gulp</h3>
             <p>I studied the configuration of the builders for more convenient and quick website development from converting SCSS to CSS, Minification JS file and Image Optimization. Creating a virtual server emulator.</p>
@@ -351,7 +362,7 @@
           <!-- BEM Methodology -->
           <div class="skills__item">
             <div class="skills__item-img">
-              <img src="icons/skills/bem.svg" alt="BEM Methodology" />
+							<img src="./icons/skills/bem.svg" alt="BEM Methodology" class="responsively-lazy" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
             </div>
             <h3 class="title title_fz14">BEM Methodology</h3>
             <p>I studied the BEM naming (Block, Element, Modifier) and put it into practice for the convenience of creating and maintaining the site in the future.</p>
@@ -359,7 +370,7 @@
           <!-- Responsive design -->
           <div class="skills__item">
             <div class="skills__item-img">
-              <img src="icons/skills/responsive.png" alt="Responsive design" />
+							<img src="./icons/skills/responsive.svg" alt="Responsive design" class="responsively-lazy" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
             </div>
             <h3 class="title title_fz14">Responsive design</h3>
             <p>I learned to work with @media screen and do adaptive layout for mobile devices.</p>
@@ -367,7 +378,7 @@
           <!-- SVG -->
           <div class="skills__item">
             <div class="skills__item-img">
-              <img src="icons/skills/svg.svg" alt="SVG" />
+							<img src="./icons/skills/svg.svg" alt="SVG" class="responsively-lazy" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
             </div>
             <h3 class="title title_fz14">SVG</h3>
             <p>I studied Vector Graphics, learned how to apply SVG to a website, adjust the size of SVG images and change color when: hover effect when necessary.</p>
@@ -375,7 +386,7 @@
           <!-- Figma / Avocode / Photoshop -->
           <div class="skills__item">
             <div class="skills__item-img">
-              <img src="icons/skills/photoshop.svg" alt="Figma / Avocode / Photoshop" />
+							<img src="./icons/skills/photoshop.svg" alt="Figma / Avocode / Photoshop" class="responsively-lazy" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
             </div>
             <h3 class="title title_fz14">Figma / Avocode / Photoshop</h3>
             <p>I am able to work with these tools for typesetting web pages according to the .PSD and .FIG layout.</p>
@@ -440,22 +451,22 @@
 
         <div class="portfolio__wrapper">
           <a href="./Project_folders/Project_001/index.html" target="_blank" class="portfolio__item">
-            <img src="img/works/1_project.jpg" alt="project" />
+						<img src="./img/works/1_project.jpg" alt="project" class="responsively-lazy" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
           </a>
           <a href="./Project_folders/Project_002/index.html" target="_blank" class="portfolio__item">
-            <img src="img/works/2_project.jpg" alt="project" />
+						<img src="./img/works/2_project.jpg" alt="project" class="responsively-lazy" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
           </a>
           <a href="./Project_folders/Project_003/index.html" target="_blank" class="portfolio__item">
-            <img src="img/works/3_project.jpg" alt="project" />
+						<img src="./img/works/3_project.jpg" alt="project" class="responsively-lazy" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
           </a>
           <a href="./Project_folders/Project_005/index.html" target="_blank" class="portfolio__item vertical">
-            <img src="img/works/5_project.jpg" alt="project" />
+						<img src="./img/works/5_project.jpg" alt="project" class="responsively-lazy" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
           </a>
           <a href="./Project_folders/Project_006/index.html" target="_blank" class="portfolio__item">
-            <img src="img/works/6_project.jpg" alt="project" />
+						<img src="./img/works/6_project.jpg" alt="project" class="responsively-lazy" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
           </a>
           <a href="./Project_folders/Project_004/index.html" target="_blank" class="portfolio__item horizonal">
-            <img src="img/works/4_project.jpg" alt="project" />
+						<img src="./img/works/4_project.jpg" alt="project" class="responsively-lazy" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
           </a>
         </div>
 
@@ -467,7 +478,7 @@
       <div class="container">
         <div class="contacts__wrapper">
           <div class="contacts__photo">
-            <img src="img/my_photo_footer.jpg" alt="My Photo" />
+						<img src="./img/my_photo_footer.jpg" alt="My Photo" class="responsively-lazy" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
           </div>
           <div class="contacts__descr">
             <h2 class="title title_fz16 contacts__title">Contacts</h2>
@@ -478,31 +489,31 @@
             <div class="contacts__social">
               <!-- Telephone -->
               <a href="tel:+380681242477" class="contacts__link">
-                <img src="icons/social/phone.svg" alt="Telephone" />
+								<img src="./icons/social/phone.svg" alt="Telephone" class="responsively-lazy" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
               </a>
               <!-- Email -->
               <a href="mailto:khozhainov.aleksandr@gmail.com" class="contacts__link">
-                <img src="icons/social/email.svg" alt="Email" />
+								<img src="./icons/social/email.svg" alt="Email" class="responsively-lazy" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
               </a>
               <!-- Telegram -->
               <a href="tg://resolve?domain=Aleksandr_Khozhainov" target="_blank" class="contacts__link">
-                <img src="icons/social/telegram.svg" alt="Telegram" />
+								<img src="./icons/social/telegram.svg" alt="Telegram" class="responsively-lazy" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
               </a>
               <!-- Linkedin -->
               <a href="https://www.linkedin.com/in/aleksandr-khozhainov-359172165" target="_blank" class="contacts__link">
-                <img src="icons/social/linkedin.svg" alt="Linkedin" />
+								<img src="./icons/social/linkedin.svg" alt="Linkedin" class="responsively-lazy" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
               </a>
               <!-- Facebook -->
               <a href="https://www.facebook.com/Aleksandr.Khozhainov" target="_blank" class="contacts__link">
-                <img src="icons/social/facebook.svg" alt="Facebook" />
+								<img src="./icons/social/facebook.svg" alt="Facebook" class="responsively-lazy" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
               </a>
               <!-- Instagram -->
               <a href="https://www.instagram.com/alex_kh28/" target="_blank" class="contacts__link">
-                <img src="icons/social/instagram.svg" alt="Instagram" />
+								<img src="./icons/social/instagram.svg" alt="Instagram" class="responsively-lazy" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
               </a>
               <!-- GitHub -->
               <a href="https://github.com/khozhainov-aleksandr" target="_blank" class="contacts__link">
-                <img src="icons/social/github.svg" alt="GitHub" />
+								<img src="./icons/social/github.svg" alt="GitHub" class="responsively-lazy" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
               </a>
             </div>
 
@@ -546,34 +557,34 @@
 					</svg>
 				</div>
 				<a href="https://tinyurl.com/y75w9wr8" target="_blank" class="modal__link">
-					<img src="./img/certificates/Hillel__Front-End_Basic-min.jpg" alt="Hillel - Front-End Basic" class="modal__link_img">
+					<img src="./img/certificates/Hillel__Front-End_Basic-min.jpg" alt="Hillel - Front-End Basic" class="responsively-lazy modal__link_img" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
 				</a>
 				<a href="https://tinyurl.com/y9gk2zpu" target="_blank" class="modal__link">
-					<img src="./img/certificates/Hillel__Front-End_Pro-min.jpg" alt="Hillel - Front-End Pro" class="modal__link_img">
+					<img src="./img/certificates/Hillel__Front-End_Pro-min.jpg" alt="Hillel - Front-End Pro" class="responsively-lazy modal__link_img" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
 				</a>
 				<a href="https://tinyurl.com/ybx6nc4x" target="_blank" class="modal__link">
-					<img src="./img/certificates/Udemy__WEB-Developer-2020-min.jpg" alt="Udemy - WEB Developer 2020" class="modal__link_img">
+					<img src="./img/certificates/Udemy__WEB-Developer-2020-min.jpg" alt="Udemy - WEB Developer 2020" class="responsively-lazy modal__link_img" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
 				</a>
 				<a href="https://tinyurl.com/y9jcqqza" target="_blank" class="modal__link">
-					<img src="./img/certificates/Udemy__Intense-immersion-in-JavaScript-min.jpg" alt="Udemy - Intense immersion in JavaScript" class="modal__link_img">
+					<img src="./img/certificates/Udemy__Intense-immersion-in-JavaScript-min.jpg" alt="Udemy - Intense immersion in JavaScript" class="responsively-lazy modal__link_img" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
 				</a>
 				<a href="https://tinyurl.com/ycvtqbte" target="_blank" class="modal__link">
-					<img src="./img/certificates/Udemy__Git_The-Complete-Course-for-Beginners-and-Beyond-min.jpg" alt="Udemy - Git The Complete Course for Beginners and Beyond" class="modal__link_img">
+					<img src="./img/certificates/Udemy__Git_The-Complete-Course-for-Beginners-and-Beyond-min.jpg" alt="Udemy - Git The Complete Course for Beginners and Beyond" class="responsively-lazy modal__link_img" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
 				</a>
 				<a href="https://tinyurl.com/yb6thkar" target="_blank" class="modal__link">
-					<img src="./img/certificates/Udemy__Basics-of-HTML-Course-min.jpg" alt="Udemy - Basics of HTML Course" class="modal__link_img">
+					<img src="./img/certificates/Udemy__Basics-of-HTML-Course-min.jpg" alt="Udemy - Basics of HTML Course" class="responsively-lazy modal__link_img" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
 				</a>
 				<a href="https://tinyurl.com/ybhgm5mr" target="_blank" class="modal__link">
-					<img src="./img/certificates/SOLOLEARN__HTML-min.jpg" alt="SOLOLEARN - HTML" class="modal__link_img">
+					<img src="./img/certificates/SOLOLEARN__HTML-min.jpg" alt="SOLOLEARN - HTML" class="responsively-lazy modal__link_img" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
 				</a>
 				<a href="https://tinyurl.com/y9mmznpy" target="_blank" class="modal__link">
-					<img src="./img/certificates/SOLOLERN__CSS-min.jpg" alt="SOLOLERN - CSS" class="modal__link_img">
+					<img src="./img/certificates/SOLOLERN__CSS-min.jpg" alt="SOLOLERN - CSS" class="responsively-lazy modal__link_img" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
 				</a>
 				<a href="https://tinyurl.com/ycq7q5rh" target="_blank" class="modal__link">
-					<img src="./img/certificates/GeekBrains__JavaScript_Beginner-min.jpg" alt="GeekBrains - JavaScript Beginner" class="modal__link_img">
+					<img src="./img/certificates/GeekBrains__JavaScript_Beginner-min.jpg" alt="GeekBrains - JavaScript Beginner" class="responsively-lazy modal__link_img" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
 				</a>
 				<a href="https://tinyurl.com/ydgpwq35" target="_blank" class="modal__link">
-					<img src="./img/certificates/GeekBrains__Programming-basics_Beginner-min.jpg" alt="GeekBrains - Programming basics Beginner" class="modal__link_img">
+					<img src="./img/certificates/GeekBrains__Programming-basics_Beginner-min.jpg" alt="GeekBrains - Programming basics Beginner" class="responsively-lazy modal__link_img" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
 				</a>
 			</div>
 		</div>
