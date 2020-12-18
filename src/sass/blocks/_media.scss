@@ -28,13 +28,6 @@
     }
   }
 
-  .education {
-    &__wrapper {
-      padding: 40px 20px 0 20px;
-      column-gap: 80px;
-    }
-  }
-
   .skills {
     &__items {
       grid-template-columns: repeat(auto-fit, 270px);
@@ -129,13 +122,6 @@
     }
   }
 
-  .education {
-    &__wrapper {
-      column-gap: 60px;
-      grid-template-columns: repeat(2, 320px);
-    }
-  }
-
   .skills {
     &__items {
       padding: 0 20px;
@@ -209,15 +195,6 @@
     }
   }
 
-  .education {
-    padding-top: 40px;
-    &__wrapper {
-      grid-template-columns: 1fr;
-      column-gap: 60px;
-      row-gap: 40px;
-    }
-  }
-
   .skills {
     padding-top: 40px;
     &__items {
@@ -229,7 +206,7 @@
       grid-template-columns: repeat(auto-fit, 320px);
       grid-auto-rows: minmax(70px, auto);
       justify-content: center;
-      margin-top: 40px;
+      margin-top: 80px;
       &-line {
         width: 100%;
       }
@@ -237,11 +214,11 @@
   }
 
   .portfolio {
-    padding-top: 40px;
+    padding-top: 80px;
   }
 
   .contacts {
-    padding-top: 40px;
+    padding-top: 80px;
     &__photo {
       display: none;
     }
@@ -314,15 +291,9 @@
     }
   }
 
-  .education {
-    &__wrapper {
-      padding: 40px 5px 0 5px;
-    }
-  }
-
   .skills {
     &__items {
-      margin-top: 20px;
+      margin-top: 40px;
     }
     &__ratings {
       grid-template-columns: repeat(auto-fit, 300px);
